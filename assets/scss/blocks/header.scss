@@ -1,0 +1,247 @@
+.header {
+  padding-top: 35px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    .logo-icon {
+      height: 58px;
+      width: 60px;
+      min-width: 60px;
+    }
+
+    .logo-text {
+      height: 38px;
+      width: 162px;
+      min-width: 162px;
+      margin-right: 19px;
+      margin-left: 19px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      min-width: 214px;
+      border-left: 1px solid rgba(51, 26, 47, 0.5);
+      padding-left: 25px;
+    }
+  }
+
+  &__menu {
+    margin-left: 31px;
+    margin-right: 91px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 50px;
+
+    .links-item {
+      font-size: 24px;
+      line-height: 35px;
+    }
+    .accordion {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-left: 12px;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    .phone-item {
+      font-size: 24px;
+      line-height: 35px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #CF51CE;
+    border-radius: 12px;
+    height: 45px;
+    padding: 0 32px;
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 35px;
+
+    svg {
+      margin-right: 14px;
+    }
+  }
+
+  &__burger {
+    display: none;
+    position: relative;
+    height: 28px;
+    width: 42px;
+    cursor: pointer;
+    min-width: 42px;
+
+    span {
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background: #CF51CE;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform .3s, opacity .3s;
+    }
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: #CF51CE;
+      border-radius: 4px;
+      transition: transform .3s, top .3s;
+    }
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+      width: 76%;
+      right: 0;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    &__logo {
+      .logo-icon {
+        height: 44px;
+        width: 47px;
+        min-width: 47px;
+      }
+
+      .logo-text {
+        height: 30px;
+        width: 126px;
+        min-width: 126px;
+      }
+      svg {
+        margin-right: 14px;
+      }
+      p {
+        padding-left: 19px;
+        font-size: 10px;
+        line-height: 14px;
+        min-width: 155px;
+      }
+    }
+    &__links {
+      grid-column-gap: 40px;
+      .links-item {
+        font-size: 18px;
+      }
+    }
+    &__right {
+      .phone-item {
+        font-size: 18px;
+      }
+    }
+    &__button {
+      font-size: 18px;
+
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    &__menu {
+      display: none;
+    }
+    &__btns {
+      margin-left: auto;
+    }
+    &__burger {
+      margin-left: 79px;
+      display: block;
+    }
+    .open-menu {
+      .header__menu {
+        display: flex;
+        position: fixed;
+        justify-content: unset;
+        margin-left: 0;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: white;
+      }
+      .header__burger {
+        span {
+          transform: rotate(-45deg);
+        }
+        &:before {
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+        &:after {
+          transform: translateX(200%);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__logo {
+      .logo-text {
+        margin-left: 10px;
+      }
+      p {
+        display: none;
+      }
+    }
+    &__button {
+      height: 36px;
+      padding: 0 20px;
+    }
+    &__burger {
+      margin-left: 22px;
+    }
+  }
+}

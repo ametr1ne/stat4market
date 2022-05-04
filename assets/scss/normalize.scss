@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #FAFAFA;
+}
+
+.bg-left, .bg-right {
+  z-index: -1;
+  position: absolute;
+}
+
+.bg-left {
+  left: 0;
+  top: 0;
+}
+.bg-right {
+  right: 0;
+}
+
+.wrapper {
+  max-width: 1530px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 80px;
+  font-weight: 700;
+}
+
+a, p {
+  color: $main;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width: 1440px) {
+  .wrapper {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bg-right, .bg-left {
+    display: none;
+  }
+}
