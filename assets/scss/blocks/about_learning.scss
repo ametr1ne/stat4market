@@ -1,0 +1,17 @@
+.about-learn {
+  margin-bottom: 131px;
+
+  h2 {
+    max-width: 680px;
+    margin: 0 auto 23px;
+  }
+
+  &__items {
+    display: flex;
+    grid-column-gap: 123px;
+  }
+
+  &__item {
+
+  }
+}

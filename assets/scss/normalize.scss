@@ -27,10 +27,24 @@ body {
   margin: 0 auto;
 }
 
+.wrapper-slim {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
 h1 {
   font-size: 56px;
   line-height: 80px;
   font-weight: 700;
+  color: #331A2F;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #331A2F;
+  text-align: center;
 }
 
 a, p {
@@ -42,10 +56,29 @@ a {
   text-decoration: none;
 }
 
+.main {
+  margin-top: 66px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 19px;
+  color: #331A2F80;
+  margin-bottom: 15px;
+
+  a {
+    color: #331A2F80;
+  }
+}
+
 @media (max-width: 1440px) {
   .wrapper {
     max-width: 1200px;
     padding: 0 15px;
+  }
+  .wrapper-slim {
+    min-width: 995px;
+    //padding: 0 15px;
   }
 }
 

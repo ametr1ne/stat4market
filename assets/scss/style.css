@@ -56,10 +56,24 @@ body {
   margin: 0 auto;
 }
 
+.wrapper-slim {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
 h1 {
   font-size: 56px;
   line-height: 80px;
   font-weight: 700;
+  color: #331A2F;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #331A2F;
+  text-align: center;
 }
 
 a, p {
@@ -71,10 +85,28 @@ a {
   text-decoration: none;
 }
 
+.main {
+  margin-top: 66px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(51, 26, 47, 0.5019607843);
+  margin-bottom: 15px;
+}
+.breadcrumbs a {
+  color: rgba(51, 26, 47, 0.5019607843);
+}
+
 @media (max-width: 1440px) {
   .wrapper {
     max-width: 1200px;
     padding: 0 15px;
+  }
+
+  .wrapper-slim {
+    min-width: 995px;
   }
 }
 @media (max-width: 1024px) {
@@ -295,6 +327,79 @@ a {
   .header__burger {
     margin-left: 22px;
   }
+}
+
+.greeting {
+  display: flex;
+}
+.greeting .text-pink {
+  color: #CF51CE;
+}
+.greeting h1 {
+  margin-bottom: 22px;
+}
+.greeting__price {
+  display: flex;
+  margin-bottom: 16px;
+}
+.greeting__price svg {
+  height: 48px;
+  width: 48px;
+  min-width: 48px;
+}
+.greeting__price p {
+  margin-left: 25px;
+  font-size: 25px;
+  line-height: 160%;
+  color: rgba(51, 26, 47, 0.8);
+}
+.greeting__price span {
+  font-size: 35px;
+  font-weight: 600;
+}
+.greeting__text p {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 160%;
+}
+.greeting__text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+.greeting__right {
+  margin-left: 42px;
+  background: url("../img/stars.png") no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.history {
+  margin-top: 145px;
+}
+.history h2 {
+  margin: 0 auto 100px;
+  max-width: 800px;
+}
+.history__item {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 80px;
+}
+.history__text p {
+  font-size: 25px;
+  line-height: 160%;
+  color: rgba(51, 26, 47, 0.8);
+}
+
+.about-learn {
+  margin-bottom: 131px;
+}
+.about-learn h2 {
+  max-width: 680px;
+  margin: 0 auto 23px;
+}
+.about-learn__items {
+  display: flex;
+  grid-column-gap: 123px;
 }
 
 /*# sourceMappingURL=style.css.map */

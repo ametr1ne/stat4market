@@ -1,5 +1,5 @@
-const loginBtn = document.querySelector('.header__wrapper')
+const loginBtn = document.querySelector('.header__burger')
 
 loginBtn.addEventListener('click', function () {
-    this.classList.toggle('open-menu')
+    document.querySelector('.header__wrapper').classList.toggle('open-menu')
 })

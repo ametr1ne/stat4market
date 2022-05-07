@@ -1,6 +1,10 @@
 @import "font-face";
 @import 'vars';
+@import 'mixins';
 @import "normalize";
 
 @import "blocks/header";
+@import "blocks/greeting";
+@import "blocks/history";
+@import "blocks/about_learning";
 
